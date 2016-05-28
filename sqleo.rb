@@ -9,6 +9,7 @@ class Sqleo < Formula
 
     def install
         libexec.install "SQLeoVQB.jar"
-        libexec.write_jar_script libexec/"SQLeoVQB.jar", "SQLeoVQB.jar"
+        (libexec/"sqleo-start.HELP").rename("sqleo-start.command"
+        # libexec.write_jar_script libexec/"SQLeoVQB.jar", "SQLeoVQB.jar"
     end
 end
