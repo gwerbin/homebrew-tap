@@ -6,5 +6,5 @@ cask 'sqleo' do
     name 'SQLeo'
     homepage "http://sqleo.sourceforge.net/"
 
-    app 'SQLeoVQB.jar'
+    app 'sqleo-2016.05.rc1/SQLeoVQB.jar'
 end
