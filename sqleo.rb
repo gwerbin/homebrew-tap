@@ -1,4 +1,4 @@
-class SQLeo < Formula
+class Sqleo < Formula
     desc "A powerful SQL tool"
     homepage "http://sqleo.sourceforge.net/"
     version "2016.05.rc1"
