@@ -8,7 +8,7 @@ class Sqleo < Formula
     bottle :unneeded
 
     def install
-        libexec.install "SQLeoVQB.jar"
-        bin.write_jar_script libexec/"SQLeoVQB.jar" "SQLeoVQB.jar"
+        # libexec.install "lib" "SQLeoVQB.jar"
+        bin.write_jar_script libexec/"SQLeoVQB.jar", "SQLeoVQB.jar"
     end
 end
