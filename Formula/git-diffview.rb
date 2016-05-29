@@ -6,7 +6,7 @@ class GitDiffview < Formula
   depends_on "tree"
 
   def install
-      bin.install "git-diffview"
-      (bin/"git-diffview").chmod 0755
+    bin.install "git-diffview"
+    (bin/"git-diffview").chmod 0755
   end
 end
