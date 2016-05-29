@@ -7,6 +7,6 @@ cask 'sqleo' do
     homepage "http://sqleo.sourceforge.net/"
     license :unknown
 
-    app "SQLeo Visual Query Builder.2016.04.rc1/SQLeoVQB.jar"
+    app "SQLeoVQB.2016.04.rc1/SQLeoVQB.jar"
 end
 
