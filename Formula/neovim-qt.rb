@@ -15,6 +15,7 @@ class NeovimQt < Formula
         ohai "Building Neovim-Qt"
         system "cmake", ".."
         system "make"
+	bin.install "bin/nvim-qt"
       end
     end
   end
