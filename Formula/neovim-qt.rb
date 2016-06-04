@@ -13,13 +13,8 @@ class NeovimQt < Formula
     def install
       mkdir "build" do
         ohai "Building Neovim-Qt"
-
-        # cmake_args = std_cmake_args + ["-DIconv_INCLUDE_DIRS:PATH=/usr/include",
-        #                                "-DIconv_LIBRARIES:PATH=/usr/lib/libiconv.dylib"]
-        # system "cmake", "..", *cmake_args
- 
         system "cmake", ".."
-        system "cmake", "--build", "."
+        system "make"
       end
     end
   end
