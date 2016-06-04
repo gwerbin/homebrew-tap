@@ -1,4 +1,4 @@
-class NeovimQt
+class NeovimQt < Formula
   desc "Neovim client library and GUI, in Qt5."
   homepage "https://github.com/equalsraf/neovim-qt"
 
