@@ -2,7 +2,7 @@ class NeovimQt < Formula
   desc "Neovim client library and GUI, in Qt5"
   homepage "https://github.com/equalsraf/neovim-qt"
   url "https://github.com/equalsraf/neovim-qt/archive/v0.2.2.tar.gz"
-  sha256 "9b983a1c241a84d8adb3003272100970f21e78f52032e902e866f13bb82c015f"
+  sha256 "f8e29b9f1ef3df4e3603238b8e5bb9206a95c54f949af187101c56777a15763b"
   head "https://github.com/equalsraf/neovim-qt.git"
 
   depends_on "cmake" => :build
