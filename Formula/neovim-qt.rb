@@ -4,7 +4,6 @@ class NeovimQt < Formula
   url "https://github.com/equalsraf/neovim-qt/archive/v0.2.3.tar.gz"
   sha256 "2ee4084f7a4503825c2b4bc27b2cb4283533c21012c946900ce4cd0362d1c0e1"
   head "https://github.com/equalsraf/neovim-qt.git"
-  version "0.2.3"
 
   depends_on "cmake" => :build
   depends_on "qt5"
