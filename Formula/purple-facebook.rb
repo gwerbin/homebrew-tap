@@ -13,6 +13,7 @@ class PurpleFacebook < Formula
     system "./configure", "--disable-dependency-tracking",
                           "--disable-silent-rules",
                           "--prefix=#{prefix}"
+    system "make"
     system "make", "install"
   end
 
