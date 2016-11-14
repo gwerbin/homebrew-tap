@@ -13,13 +13,16 @@ class Scim < Formula
 
     # do not enable XLS/XLSX support here because "libxlsreader" isn't
     # available on Homebrew
-    make_args = %W[
-      CC=#{ENV.cc}
-      prefix=#{HOMEBREW_PREFIX}
-      LINUX=
-      MACOSX=-DMACOSX
-    ]
-    system "make", *make_args
+    Dir.chdir("src") do
+      print Dir
+      make_args = %W[
+        CC=#{ENV.cc}
+        prefix=#{HOMEBREW_PREFIX}
+        LINUX=
+        MACOSX=-DMACOSX
+      ]
+      system "make", *make_args
+    end
 
     bin.install "scim"
     doc.install "scim_help"
