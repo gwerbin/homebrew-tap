@@ -9,14 +9,14 @@ class Scim < Formula
 
   def install
     ENV.prepend_path "LDFLAGS", Formula["ncurses"].opt_lib
-    ENV.prepend_path "CPPFLAGS", Formula["ncurses"].opt_include
+    ENV.prepend_path "CFLAGS", Formula["ncurses"].opt_include
     ENV.prepend_path "PKG_CONFIG_PATH", "#{Formula["ncurses"].opt_lib}/pkgconfig"
 
     # do not enable XLS/XLSX support here because "libxlsreader" isn't
     # available on Homebrew
     Dir.chdir("src") do
       make_args = %W[
-        CC=gcc
+        CC=#{ENV.cc}
         prefix=#{HOMEBREW_PREFIX}
         LINUX=
         MACOSX=-DMACOSX
