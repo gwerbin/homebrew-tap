@@ -2,7 +2,7 @@ class Scim < Formula
   desc "Ncurses spreadsheet program for terminal"
   homepage "https://github.com/andmarti1424/sc-im"
   url "https://github.com/andmarti1424/sc-im/archive/v0.3.0.tar.gz"
-  sha256 "09a4f44094c98aa59961c1235e134f12c84672d873f7fe0229aeee4ef256464f"
+  sha256 "d721e8fb850ebe3c590311ab14e37e92b3340a19e41cdfd67798fdcfac6fae3b<Paste>"
 
   depends_on "ncurses" => :build
 
