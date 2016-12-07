@@ -4,7 +4,7 @@ class Scim < Formula
   url "https://github.com/andmarti1424/sc-im/archive/v0.3.0.tar.gz"
   sha256 "d721e8fb850ebe3c590311ab14e37e92b3340a19e41cdfd67798fdcfac6fae3b"
 
-  depends_on :gcc => :build
+  depends_on "gcc" => :build
   depends_on "ncurses" => :build
 
   def install
