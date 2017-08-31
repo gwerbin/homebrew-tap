@@ -8,9 +8,11 @@ class Sqlcheck < Formula
 
   def install
     system "./bootstrap"
-    system "cmake", "..", "-DCMAKE_BUILD_TYPE=RELEASE", *std_cmake_args
-    system "make"
-    system "make", "install"
+    Dir.chdir "build" do
+      system "cmake", "..", "-DCMAKE_BUILD_TYPE=RELEASE", *std_cmake_args
+      system "make"
+      system "make", "install"
+    end
   end
 
   test do
