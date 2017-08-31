@@ -7,5 +7,5 @@ cask 'sqlcheck' do
   homepage 'https://github.com/jarulraj/sqlcheck'
 
   binary 'bin/sqlcheck'
-  artifact 'bin/libsqlcheck_library.a', target: '/usr/local/lib/libsqlcheck_library.a'
+  artifact 'bin/libsqlcheck_library.a', target: '/usr/local/lib/libsqlcheck.a'
 end
