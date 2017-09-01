@@ -17,7 +17,8 @@ class Sqlcheck < Formula
   def install
     system "./bootstrap"
     Dir.chdir "build" do
-      system "cmake", "..", "-DCMAKE_BUILD_TYPE=RELEASE", *std_cmake_args
+      # Don't need to pass "-DCMAKE_BUILD_TYPE=RELEASE" because it's in std_cmake_args
+      system "cmake", "..", *std_cmake_args
       system "make"
       system "make", "install"
     end
