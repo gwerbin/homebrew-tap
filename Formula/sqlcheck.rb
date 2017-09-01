@@ -29,9 +29,8 @@ class Sqlcheck < Formula
       f.puts "select * from tbl as t;"
       f.close_write
       test_result = f.read
-    end
 
-    assert_match test_result, <<EXPECTED
+      assert_match test_result, <<EXPECTED
 -------------------------------------------------
 > RISK LEVEL    :: ALL ANTI-PATTERNS
 -------------------------------------------------
@@ -49,6 +48,6 @@ All Anti-Patterns  :: 1
 >  Medium Risk :: 0
 >  Low Risk    :: 0
 EXPECTED
-
+    end
   end
 end
