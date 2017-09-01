@@ -25,7 +25,7 @@ class Sqlcheck < Formula
   end
 
   test do
-    IO.popen("sqlcheck") do |f|
+    IO.popen("sqlcheck", "r+") do |f|
       f.puts "select * from tbl as t;"
       f.gets
     end
