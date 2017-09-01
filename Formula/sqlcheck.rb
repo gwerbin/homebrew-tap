@@ -25,19 +25,18 @@ class Sqlcheck < Formula
   end
 
   test do
-    IO.popen("#{bin}/sqlcheck", "a+") do |f|
-      f.puts "select * from tbl as t;"
-      f.close_write
-      test_result = f.read
+    test_cmd = "sqlcheck"
+    test_input = "select * from tbl;"
 
-      assert_match test_result, <<EXPECTED
+    test_output = pipe_output test_cmd, test_input, 0
+    assert_equal <<"EXPECTED", test_output
 -------------------------------------------------
 > RISK LEVEL    :: ALL ANTI-PATTERNS
 -------------------------------------------------
 ==================== Results ===================
 
 -------------------------------------------------
-SQL Statement: select * from tbl as t;
+SQL Statement: select * from tbl;
 (HIGH RISK) (QUERY ANTI-PATTERN) SELECT *
 [Matching Expression: select *]
 
@@ -48,6 +47,5 @@ All Anti-Patterns  :: 1
 >  Medium Risk :: 0
 >  Low Risk    :: 0
 EXPECTED
-    end
   end
 end
