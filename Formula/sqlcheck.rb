@@ -26,6 +26,8 @@ class Sqlcheck < Formula
 
   test do
     IO.popen("sqlcheck") do |f|
+      f.puts "select * from tbl as t;"
+      f.gets
     end
   end
 end
