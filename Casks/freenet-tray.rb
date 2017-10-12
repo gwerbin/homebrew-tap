@@ -10,6 +10,6 @@ cask 'freenet-tray' do
 
   app 'FreenetTray.app'
 
-  caveats 'This program is just the "Tray Application". Freenet itself must'\
-         ' be installed and uninstalled from the FreenetTray application'
+  caveats 'This program is just the "Tray Application". Freenet itself can'\
+      ' be installed and uninstalled once FreenetTray.app is running.'
 end
