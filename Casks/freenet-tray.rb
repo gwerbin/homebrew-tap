@@ -1,4 +1,4 @@
-cask 'FreenetTray' do
+cask 'freenet-tray' do
   version '2.1.0'
   sha256 '13c20619813d349a517906096068c6f0986ef6c36295bc7f4da3535022ce4e94'
 

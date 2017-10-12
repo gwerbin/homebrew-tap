@@ -1,4 +1,4 @@
-cask 'Fasttasks' do
+cask 'fasttasks' do
   version :latest
   sha256 '143c32e07e7cfd74e1075bf81b0a79c8b4261f0fe3b9f3cc0c4baf299969d3ba'
 

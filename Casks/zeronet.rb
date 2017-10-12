@@ -1,5 +1,5 @@
-# TODO: zap stanza, appcast
-cask 'Zeronet' do
+# TODO: zap stanza
+cask 'zeronet' do
   version :latest
   sha256 '5839c5896a6d3f7d8e272c9c04e39a9f81848d257e51b7c668046b15e9bbb3b5'
 

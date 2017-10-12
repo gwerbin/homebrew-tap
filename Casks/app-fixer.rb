@@ -1,4 +1,4 @@
-cask 'AppFixer' do
+cask 'app-fixer' do
   version :latest
   sha256 '10054e5b465d33df8a9e92d2fb60b2c1057cc9944edf364aae8d0260250ba548'
 

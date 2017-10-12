@@ -1,4 +1,4 @@
-cask 'MEGAcmd' do
+cask 'megacmd' do
   version :latest
   sha256 'a33ade1584f0fdabec458c611ef3adfc7d7d0f9cf9a2d334c7147568824f457b'
 
