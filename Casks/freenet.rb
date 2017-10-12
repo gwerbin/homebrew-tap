@@ -10,4 +10,7 @@ cask 'Freenet' do
   homepage 'https://freenetproject.org'
 
   app 'FreenetTray.app'
+
+  caveats 'This program is just the "Tray Application". Freenet itself must'\
+         ' be installed and uninstalled from the FreenetTray application'
 end
