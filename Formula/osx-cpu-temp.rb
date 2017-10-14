@@ -7,4 +7,8 @@ class OsxCpuTemp < Formula
     system "make"
     bin.install "osx-cpu-temp"
   end
+
+  test do
+    system "#{bin}osx-cpu-temp"
+  end
 end

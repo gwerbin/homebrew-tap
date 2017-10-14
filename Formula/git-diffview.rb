@@ -13,21 +13,22 @@ class GitDiffview < Formula
   test do
     mkdir "repo"
     cd "repo"
-    system "git init"
+    system "git", "init"
     # need at least 2 commits for it to work, since
     # the script assumes the presence of a HEAD~ revision.
-    system "touch", "foo"
+    touch "foo"
     system "git", "add", "foo"
     system "git", "commit", "-m", "Add 'foo'"
-    system "touch", "bar"
+    touch "bar"
     system "git", "add", "bar"
     system "git", "commit", "-m", "Add 'bar'"
-    system "touch", "baz"
+    touch "baz"
     system "git", "add", "baz"
     system "git", "commit", "-m", "Add 'baz'"
-    stdout, stderr, status = Open3.capture3 "git-diffview"
+    _stdout, _stderr, _status = Open3.capture3 "git-diffview"
+    # stdout, stderr, status = Open3.capture3 "git-diffview"
     # stdout == "bar\ A\nbaz\ A"
     # stderr == ""
-    # status == 0 
+    # status == 0
   end
 end

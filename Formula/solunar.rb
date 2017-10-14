@@ -1,15 +1,15 @@
 class Solunar < Formula
   desc "Command-line utility for displaying solar and lunar ephemera"
   homepage "http://kevinboone.net/README_solunar.html"
-  version "0.1.3b"
   url "https://github.com/kevinboone/solunar_cmdline/archive/0.1.3b.tar.gz"
+  version "0.1.3b"
   sha256 "d9d79726c1aa6ddc7acbc997d41ecd006e4cfaf023ae22ae264178d280624a1d"
 
   # Fix up the Makefile
   patch :DATA
 
   def install
-    FileUtils.chmod "u+x", "parse_zoneinfo.pl"
+    chmod "u+x", "parse_zoneinfo.pl"
     system "make", "VERSION=#{version}", "-f", "Makefile.OSX"
     bin.install "solunar"
   end

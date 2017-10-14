@@ -1,8 +1,8 @@
 class GuileJson < Formula
   desc "JSON module for Guile"
   homepage "https://github.com/aconchillo/guile-json"
-  url "http://download.savannah.gnu.org/releases/guile-json/guile-json-0.6.0.tar.gz"
-  sha256 "ec51c039ffce91f61df782f829db3c616f645cba74ff365d493cb2b7e879b2e2  guile-json-0.6.0.tar.gz"
+  url "https://download.savannah.gnu.org/releases/guile-json/guile-json-0.6.0.tar.gz"
+  sha256 "ec51c039ffce91f61df782f829db3c616f645cba74ff365d493cb2b7e879b2e2"
 
   head do
     url "https://github.com/aconchillo/guile-json.git"

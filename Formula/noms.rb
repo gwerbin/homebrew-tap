@@ -4,21 +4,24 @@ class Noms < Formula
   head "https://s3-us-west-2.amazonaws.com/downloadstable.noms.io/jobs/NomsBuildGoBinaries-v7/4/noms-HEAD-darwin-amd64.tar.gz"
 
   def install
-    bin.install "nomdex"
     bin.install "noms"
+    bin.install "nomdex"
 
-    bin.install "blob-get"
     bin.install "counter"
     bin.install "poke"
+    bin.install "blob-get"
     bin.install "url-fetch"
-    bin.install "xml-import"
 
     bin.install "csv-analyze"
-    bin.install "csv-export"
+
+    bin.install "csv-import"
     bin.install "json-import"
+    bin.install "xml-import"
+
+    bin.install "csv-export"
   end
 
   test do
-    system "noms", "version"
+    system "#{bin}/noms", "version"
   end
 end
