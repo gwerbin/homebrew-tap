@@ -19,5 +19,6 @@ class NeovimQt < Formula
   end
 
   test do
+    # FIXME
   end
 end
