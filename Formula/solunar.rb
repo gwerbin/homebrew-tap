@@ -15,6 +15,7 @@ class Solunar < Formula
   end
 
   test do
+    system "#{bin}/solunar", "-c", "America/New_York"
   end
 end
 
