@@ -1,0 +1,13 @@
+PROGRAMMING LANGUAGES
+---------------------
+
+Vicare Scheme: http://marcomaggi.github.com/vicare.html
+Cyclone Scheme: http://justinethier.github.io/cyclone/ (complicated, needs to download extra files to bootstrap)
+
+GAMES
+-----
+
+Red Eclipse: https://redeclipse.net
+Xonotic: https://www.xonotic.org
+Annex: Conquer the World: https://www.moddb.com/games/annex-conquer-the-world
+BZFlag: https://www.bzflag.org
