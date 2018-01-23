@@ -6,5 +6,5 @@ cask 'critical-updates' do
   name 'Critical Updates'
   homepage 'https://sqwarq.com/critical-updates/'
 
-  app 'CriticalUpdates.app'
+  app 'Critical Updates.app'
 end
