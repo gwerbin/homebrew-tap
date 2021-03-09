@@ -13,8 +13,15 @@ class NeovimQt < Formula
     mkdir "build" do
       system "cmake", "-DCMAKE_BUILD_TYPE=Release", ".."
       system "make"
-      prefix.install "bin/nvim-qt.app"
-      bin.install_symlink prefix/"nvim-qt.app/Contents/MacOS/nvim-qt"
+
+      on_macos do
+        prefix.install "bin/nvim-qt.app"
+        bin.install_symlink prefix/"nvim-qt.app/Contents/MacOS/nvim-qt"
+      end
+
+      on_linux do
+        bin.install "bin/nvim-qt"
+      end
     end
   end
 
